@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.top, .header {
+    text-align: center;
+}
+
+/******************* PAGE ACCUEIL **************************/
+
+.site {
+    display: grid;
+    grid-template-rows: minmax(100px / auto) 7fr 1fr;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar body"
+        "footer footer";
+}
+
+.header {
+    background: rgb(134, 238, 134);
+    border: solid 1px #999;
+    padding-bottom: 30px;
+    grid-area: header;
+}
+
+.sidebar {
+    background: rgb(134, 238, 233);
+    border: solid 1px #999;
+    padding: 10px;
+    grid-area: sidebar;
+}
+
+
+.body {
+    background: rgb(241, 255, 160);
+    border: solid 1px #999;
+    padding: 10px;
+    grid-area: body;
+}
+
+.footer {
+    background: rgb(253, 184, 253);
+    border: solid 1px #999;
+    padding: 10px;
+    grid-area: footer;
+}
+
+
+
+/******************* PAGE 1 **************************/
+
+a {
+    background: cyan;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    
+}
+
+a:hover {
+    background: rgb(40, 170, 170);
+    color: #FFF;
+}
+
+.grid > div {
+    border: solid 1px #999;
+    padding: 5px;
+}
+
+.grid {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.childe1 {
+    background: cyan;
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+}
+
+.childe2 {
+    background: rgb(0, 255, 42);
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+.childe3 {
+    background: rgb(38, 0, 255);
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.childe4 {
+    background: rgb(255, 0, 191);
+    grid-column: 4 / 4;
+    grid-row: 3 / 4;
+}
+
+.childe5 {
+    background: rgb(28, 107, 107);
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
+
+.childe6 {
+    background: rgb(154, 250, 250);
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+.childe7 {
+    background: rgb(255, 251, 0);
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+.childe8 {
+    background: rgb(255, 179, 81);
+    grid-column: 4 / 4;
+    grid-row: 4 / 4;
+}
+
